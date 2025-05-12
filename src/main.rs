@@ -1,3 +1,5 @@
+mod protocol;
+
 use log::info;
 use simplelog::*;
 

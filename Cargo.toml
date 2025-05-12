@@ -1,7 +1,9 @@
-[workspace]
-resolver = "2"
-members = ["yaps-protocol", "yaps"]
+[package]
+name = "yaps"
+version = "0.1.0"
+edition = "2024"
 
-[workspace.dependencies]
+[dependencies]
 tokio = { version = "1.45", features = ["full"] }
 log = "0.4"
+simplelog = "0.12"

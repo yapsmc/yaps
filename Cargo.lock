@@ -471,13 +471,4 @@ dependencies = [
  "log",
  "simplelog",
  "tokio",
- "yaps-protocol",
-]
-
-[[package]]
-name = "yaps-protocol"
-version = "0.1.0"
-dependencies = [
- "log",
- "tokio",
 ]
