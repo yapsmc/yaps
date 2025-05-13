@@ -1,6 +1,8 @@
 mod protocol;
+mod server;
 
 use log::info;
+use server::Server;
 use simplelog::*;
 
 #[tokio::main]
@@ -12,5 +14,8 @@ async fn main() {
         ColorChoice::Auto,
     );
 
-    info!("starting up");
+    let server = Server::new().await;
+
+    info!("server started");
+    server.start().await;
 }
